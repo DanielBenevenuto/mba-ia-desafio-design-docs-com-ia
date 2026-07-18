@@ -217,7 +217,7 @@ Response `201 Created` (única vez em que a secret aparece em claro):
   "customerId": "9f8b1c2e-1111-4222-8333-444455556666",
   "url": "https://integracao.atlascomercial.com.br/webhooks/oms",
   "statuses": ["SHIPPED", "DELIVERED"],
-  "secret": "whsec_9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d",
+  "secret": "whsec_<gerada-no-servidor-exibida-apenas-uma-vez>",
   "active": true,
   "createdAt": "2026-07-17T12:00:00.000Z"
 }
@@ -263,7 +263,7 @@ Response `200 OK`:
 ```json
 {
   "id": "3c1d0a8e-7777-4888-9999-000011112222",
-  "secret": "whsec_1f2e3d4c5b6a79880706152433421100",
+  "secret": "whsec_<nova-secret-gerada-na-rotacao>",
   "previousSecretExpiresAt": "2026-07-18T12:00:00.000Z"
 }
 ```
